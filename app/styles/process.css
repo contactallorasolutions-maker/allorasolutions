@@ -1,0 +1,79 @@
+.process__timeline {
+  position: relative;
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(180px, 1fr));
+  gap: 22px;
+  align-items: start;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.process__connector {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 8px;
+  height: 1px;
+  pointer-events: none;
+}
+
+.process__connector::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 1px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  transition: width 0.9s var(--ease-main);
+}
+
+.process__timeline.is-visible .process__connector::before {
+  width: 100%;
+}
+
+.process-step {
+  position: relative;
+  min-width: 180px;
+  padding-top: 24px;
+}
+
+.process-step::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-1);
+  box-shadow: 0 0 14px rgba(200, 255, 0, 0.6);
+}
+
+.process-step__num {
+  margin: 0 0 12px;
+  color: var(--accent-1);
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.process-step h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.process-step p {
+  margin: 8px 0 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+

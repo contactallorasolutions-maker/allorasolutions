@@ -1,0 +1,93 @@
+:root {
+  --bg: #080808;
+  --surface: #0f0f0f;
+  --surface-2: #161616;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.14);
+  --text-primary: #f0eee8;
+  --text-secondary: #888580;
+  --text-tertiary: #4a4845;
+  --accent-1: #c8ff00;
+  --accent-2: #6b4eff;
+  --accent-glow: rgba(200, 255, 0, 0.08);
+  --ease-main: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 0.3s;
+  --duration-mid: 0.6s;
+  --duration-slow: 1.1s;
+  --max-width: 1440px;
+  --gutter: clamp(24px, 5vw, 80px);
+  --section-pad: clamp(80px, 12vw, 160px);
+  --text-hero: clamp(64px, 10vw, 140px);
+  --text-xl: clamp(40px, 5vw, 72px);
+  --text-lg: clamp(24px, 3vw, 36px);
+  --text-md: 18px;
+  --text-sm: 15px;
+  --text-xs: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.01em;
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: none;
+}
+
+body.cursor-disabled {
+  cursor: auto;
+}
+
+body.cursor-disabled #cursor-dot,
+body.cursor-disabled #cursor-ring {
+  display: none;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+a,
+button {
+  color: inherit;
+  font: inherit;
+}
+
+.container {
+  width: min(var(--max-width), 100% - (var(--gutter) * 2));
+  margin-inline: auto;
+}
+
+.section {
+  padding: var(--section-pad) 0;
+}
+
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 1px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.scroll-progress__bar {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--accent-1);
+  transition: width 0.1s linear;
+}
+

@@ -1,0 +1,101 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.about__copy h2 {
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  font-size: clamp(36px, 4.8vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 0.98;
+}
+
+.about__copy p {
+  margin: 16px 0 0;
+  color: var(--text-secondary);
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+.about__copy a {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--accent-1);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.about__visual {
+  display: grid;
+  justify-items: end;
+}
+
+.about-visual {
+  position: relative;
+  width: min(100%, 520px);
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(circle at 70% 22%, rgba(107, 78, 255, 0.22), transparent 52%),
+    radial-gradient(circle at 18% 82%, rgba(200, 255, 0, 0.14), transparent 48%),
+    linear-gradient(145deg, rgba(12, 12, 12, 1), rgba(5, 5, 5, 1));
+  overflow: hidden;
+  filter: contrast(1.1) brightness(0.9);
+}
+
+.about-visual__beam {
+  position: absolute;
+  width: 140%;
+  height: 80px;
+  left: -20%;
+  border-radius: 999px;
+  filter: blur(16px);
+  opacity: 0.5;
+  mix-blend-mode: screen;
+}
+
+.about-visual__beam--lime {
+  top: 58%;
+  transform: rotate(-28deg);
+  background: linear-gradient(90deg, transparent 8%, rgba(200, 255, 0, 0.7), transparent 92%);
+}
+
+.about-visual__beam--violet {
+  top: 32%;
+  transform: rotate(24deg);
+  background: linear-gradient(90deg, transparent 12%, rgba(107, 78, 255, 0.76), transparent 88%);
+}
+
+.about-visual__shape {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(2px);
+}
+
+.about-visual__shape--a {
+  width: 42%;
+  aspect-ratio: 1 / 1;
+  left: 16%;
+  top: 18%;
+  transform: rotate(22deg);
+  border-radius: 18px;
+}
+
+.about-visual__shape--b {
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  right: 18%;
+  bottom: 18%;
+  transform: rotate(-18deg);
+  border-radius: 50%;
+}
+

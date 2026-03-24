@@ -1,0 +1,17 @@
+@import "./styles/base.css";
+@import "./styles/nav.css";
+@import "./styles/hero.css";
+@import "./styles/marquee.css";
+@import "./styles/section-head.css";
+@import "./styles/work.css";
+@import "./styles/services.css";
+@import "./styles/numbers.css";
+@import "./styles/process.css";
+@import "./styles/testimonials.css";
+@import "./styles/about.css";
+@import "./styles/contact.css";
+@import "./styles/footer.css";
+@import "./styles/reveal.css";
+@import "./styles/responsive.css";
+@import "./styles/animations.css";
+@import "./styles/theme-overrides.css";
