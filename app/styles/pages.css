@@ -1,0 +1,170 @@
+.page-intro {
+  padding-bottom: 24px;
+}
+
+.page-intro .section-head {
+  margin-bottom: 0;
+}
+
+.page-intro h1 {
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  font-size: clamp(44px, 7vw, 78px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.page-intro__lead {
+  margin: 18px 0 0;
+  max-width: 760px;
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.page-pills {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.page-pills span {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 12px;
+  color: var(--text-secondary);
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.page-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.page-grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.page-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  padding: 20px;
+}
+
+.page-card h3 {
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+
+.page-card p {
+  margin: 10px 0 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.page-card ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: var(--text-secondary);
+  display: grid;
+  gap: 7px;
+}
+
+.page-card li {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.page-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.page-stat {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  padding: 22px 18px;
+  text-align: center;
+}
+
+.page-stat strong {
+  display: block;
+  font-family: "Syne", sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.page-stat span {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-cta-strip {
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.page-cta-strip p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.page-cta-strip a {
+  text-decoration: none;
+  color: var(--accent-1);
+  font-weight: 600;
+}
+
+.page-faq {
+  margin-top: 4px;
+  display: grid;
+  gap: 10px;
+}
+
+.page-faq details {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: 14px 16px;
+}
+
+.page-faq summary {
+  cursor: pointer;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+.page-faq p {
+  margin: 10px 0 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

@@ -106,15 +106,22 @@
   opacity: 0.6;
 }
 
-.project-visual--atlas .project-visual__frame {
+.project-visual__cover {
+  width: 100%;
+  height: calc(100% - 26px);
+  object-fit: cover;
+  display: block;
+}
+
+.project-visual--eleve .project-visual__frame {
   background:
     linear-gradient(135deg, rgba(200, 255, 0, 0.08), transparent 38%),
     linear-gradient(155deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.74));
 }
 
-.project-visual--orbit .project-visual__frame {
+.project-visual--hospital .project-visual__frame {
   background:
-    linear-gradient(145deg, rgba(107, 78, 255, 0.14), transparent 42%),
+    linear-gradient(145deg, rgba(62, 190, 255, 0.18), transparent 42%),
     linear-gradient(160deg, rgba(0, 0, 0, 0.72), rgba(20, 20, 20, 0.82));
 }
 
@@ -237,7 +244,7 @@
 
 .work__teaser p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-secondary);
   font-family: "Syne", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -250,6 +257,6 @@
 }
 
 .work__teaser:hover p {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-primary);
 }
 

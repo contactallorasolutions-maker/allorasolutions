@@ -15,29 +15,32 @@ import TestimonialsSection from "./components/sections/TestimonialsSection";
 import WorkSection from "./components/sections/WorkSection";
 
 const navLinks = [
-  { href: "#work", label: "Work" },
-  { href: "#services", label: "Services" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" }
+  { href: "/", label: "Home" },
+  { href: "/work", label: "Work" },
+  { href: "/services", label: "Services" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" }
 ];
 
 const heroLines = [["We", "craft"], ["digital"], ["experiences."]];
 
 const projects = [
   {
-    name: "Project Atlas Commerce",
-    tags: ["Web Design", "Branding", "Development"],
+    name: "\u00C9L\u00C9V\u00C9",
+    tags: ["Luxury Concierge", "Web App", "Hospitality"],
     description:
-      "A premium ecommerce website and brand system for a fast-growing consumer startup. We are designing the customer journey, visual identity, and development stack for a fast, conversion-focused launch.",
-    visualClass: "project-visual--atlas",
-    href: "#"
+      "A concierge platform delivering premium lifestyle services with a refined digital experience tailored for high-end clients.",
+    visualClass: "project-visual--eleve",
+    coverImage: "/projects/eleve-cover.svg",
+    href: "https://eleve-concierge.vercel.app/"
   },
   {
-    name: "Project Orbit Assist",
-    tags: ["AI Chatbot", "Automation", "Marketing"],
+    name: "AI Receptionist for a hospital",
+    tags: ["Healthcare", "AI Assistant", "Patient Support"],
     description:
-      "An AI-driven support and lead automation platform for a service-led business. We are building a chatbot experience, intelligent routing flows, and campaign integration to increase speed and qualified conversions.",
-    visualClass: "project-visual--orbit",
+      "An AI receptionist workflow designed to handle hospital front-desk interactions, appointment routing, and patient communication at scale.",
+    visualClass: "project-visual--hospital",
+    coverImage: "/projects/hospital-ai-cover.svg",
     href: "#"
   }
 ];
@@ -456,7 +459,7 @@ export default function Home() {
 
   const handleCopyEmail = async () => {
     try {
-      await navigator.clipboard.writeText("hello@allorasolutions.com");
+      await navigator.clipboard.writeText("contact.allorasolutions@gmail.com");
       setCopied(true);
       clearTimeout(copiedTimer.current);
       copiedTimer.current = setTimeout(() => setCopied(false), 1600);

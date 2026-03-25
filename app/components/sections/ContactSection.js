@@ -16,7 +16,7 @@ export default function ContactSection({ onStartProject, onCopyEmail, copied }) 
             Start a Project <span>&rarr;</span>
           </button>
           <button className="contact-email-btn" onClick={onCopyEmail}>
-            hello@allorasolutions.com
+            contact.allorasolutions@gmail.com
             <small className={`copy-tip ${copied ? "is-visible" : ""}`}>Copied!</small>
           </button>
         </div>

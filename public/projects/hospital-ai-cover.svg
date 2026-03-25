@@ -1,0 +1,43 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+  <title id="t">Hospital AI receptionist cover</title>
+  <desc id="d">AI receptionist for hospital project cover artwork</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07141c" />
+      <stop offset="55%" stop-color="#0b2230" />
+      <stop offset="100%" stop-color="#0a1118" />
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.2" cy="0.12" r="0.62">
+      <stop offset="0%" stop-color="#50d8ff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#50d8ff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.88" cy="0.88" r="0.55">
+      <stop offset="0%" stop-color="#7de8ff" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#7de8ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)" />
+  <rect width="1600" height="1000" fill="url(#glowA)" />
+  <rect width="1600" height="1000" fill="url(#glowB)" />
+
+  <g stroke="#87e9ff" opacity="0.28" fill="none" stroke-width="2">
+    <path d="M220 200H1380"/>
+    <path d="M220 500H1380"/>
+    <path d="M220 800H1380"/>
+    <path d="M320 120V880"/>
+    <path d="M800 120V880"/>
+    <path d="M1280 120V880"/>
+  </g>
+
+  <g fill="#e8fbff">
+    <text x="220" y="420" font-family="Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="5">AI RECEPTIONIST</text>
+    <text x="222" y="494" font-family="Arial, sans-serif" font-size="38" letter-spacing="3" opacity="0.9">FOR A HOSPITAL</text>
+  </g>
+
+  <g fill="#7de8ff" opacity="0.88">
+    <circle cx="1250" cy="300" r="16"/>
+    <circle cx="1310" cy="300" r="16"/>
+    <circle cx="1370" cy="300" r="16"/>
+  </g>
+</svg>

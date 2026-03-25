@@ -3,7 +3,7 @@ export default function FooterSection({ navLinks }) {
     <footer className="footer">
       <div className="container">
         <div className="footer__top">
-          <a className="nav__brand" href="#top" aria-label="Allora home">
+          <a className="nav__brand" href="/" aria-label="Allora home">
             <span>Allora</span>
             <i />
           </a>

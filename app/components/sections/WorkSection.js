@@ -15,7 +15,16 @@ export default function WorkSection({ projects }) {
                 <div className={`project-visual ${project.visualClass}`} aria-hidden="true">
                   <div className="project-visual__frame">
                     <div className="project-visual__bar" />
-                    <div className="project-visual__lines" />
+                    {project.coverImage ? (
+                      <img
+                        src={project.coverImage}
+                        alt={`${project.name} cover`}
+                        className="project-visual__cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="project-visual__lines" />
+                    )}
                   </div>
                 </div>
               </div>

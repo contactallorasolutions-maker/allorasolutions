@@ -48,7 +48,7 @@ export default function NumbersSection({ quoteWords }) {
           <p>
             {quoteWords.map((word, index) => (
               <span key={`${word}-${index}`} style={{ transitionDelay: `${index * 0.06}s` }}>
-                {word}{" "}
+                {word}
               </span>
             ))}
           </p>
