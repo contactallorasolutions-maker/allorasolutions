@@ -182,6 +182,7 @@ export default function Home() {
   const [formData, setFormData] = useState({ name: "", email: "", details: "" });
   const [formErrors, setFormErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formLoading, setFormLoading] = useState(false);
   const testimonialsRef = useRef(null);
   const copiedTimer = useRef(null);
 
@@ -294,7 +295,7 @@ export default function Home() {
     const touchDevice =
       window.matchMedia("(pointer: coarse)").matches || navigator.maxTouchPoints > 0;
 
-    let cleanupCursor = () => {};
+    let cleanupCursor = () => { };
     if (touchDevice) {
       body.classList.add("cursor-disabled");
     } else {
@@ -488,7 +489,7 @@ export default function Home() {
     return nextErrors;
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const nextErrors = validateForm();
     setFormErrors(nextErrors);
@@ -496,10 +497,35 @@ export default function Home() {
       setFormSubmitted(false);
       return;
     }
-    setFormSubmitted(true);
-    setFormErrors({});
-    setFormData({ name: "", email: "", details: "" });
-    setSelectedNeeds([]);
+    setFormLoading(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "47e1a5bc-3730-48d0-92b4-f474e56de261",
+          subject: `New Project Inquiry from ${formData.name.trim()}`,
+          from_name: "Allora Solutions Website",
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          services: selectedNeeds.join(", "),
+          details: formData.details.trim()
+        })
+      });
+      const result = await response.json();
+      if (result.success) {
+        setFormSubmitted(true);
+        setFormErrors({});
+        setFormData({ name: "", email: "", details: "" });
+        setSelectedNeeds([]);
+      } else {
+        setFormErrors({ submit: "Something went wrong. Please try again." });
+      }
+    } catch {
+      setFormErrors({ submit: "Network error. Please try again." });
+    } finally {
+      setFormLoading(false);
+    }
   };
 
   const handleToggleService = (serviceId) => {
@@ -558,6 +584,7 @@ export default function Home() {
         selectedNeeds={selectedNeeds}
         toggleNeed={toggleNeed}
         formSubmitted={formSubmitted}
+        formLoading={formLoading}
       />
     </>
   );

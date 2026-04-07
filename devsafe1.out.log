@@ -1,0 +1,5 @@
+
+> allora-solutions-site@1.0.0 dev
+> node scripts/dev-safe.js --hostname 127.0.0.1 --port 3000
+
+[?25h

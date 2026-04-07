@@ -9,7 +9,8 @@ export default function ContactOverlay({
   serviceNeeds,
   selectedNeeds,
   toggleNeed,
-  formSubmitted
+  formSubmitted,
+  formLoading
 }) {
   return (
     <div className={`cta-overlay ${contactOpen ? "cta-overlay--open" : ""}`}>
@@ -36,7 +37,6 @@ export default function ContactOverlay({
               onChange={(event) =>
                 setFormData((prev) => ({ ...prev, name: event.target.value }))
               }
-              placeholder="Jane Doe"
               aria-invalid={Boolean(formErrors.name)}
             />
             {formErrors.name ? <small>{formErrors.name}</small> : null}
@@ -50,7 +50,6 @@ export default function ContactOverlay({
               onChange={(event) =>
                 setFormData((prev) => ({ ...prev, email: event.target.value }))
               }
-              placeholder="you@company.com"
               aria-invalid={Boolean(formErrors.email)}
             />
             {formErrors.email ? <small>{formErrors.email}</small> : null}
@@ -81,15 +80,18 @@ export default function ContactOverlay({
               onChange={(event) =>
                 setFormData((prev) => ({ ...prev, details: event.target.value }))
               }
-              placeholder="Goals, timeline, and budget range"
               aria-invalid={Boolean(formErrors.details)}
             />
             {formErrors.details ? <small>{formErrors.details}</small> : null}
           </label>
 
-          <button className="form-submit" type="submit">
-            Submit
+          <button className="form-submit" type="submit" disabled={formLoading}>
+            {formLoading ? "Sending..." : "Submit"}
           </button>
+
+          {formErrors.submit ? (
+            <p className="form-error-msg">{formErrors.submit}</p>
+          ) : null}
 
           <p className={`form-success ${formSubmitted ? "is-visible" : ""}`}>
             Thanks. We will get back to you within 24 hours.
