@@ -4,7 +4,7 @@ export default function WorkSection({ projects }) {
       <div className="container">
         <header className="section-head reveal">
           <p className="section-head__eyebrow">Selected Work</p>
-          <h2>Two projects in motion.</h2>
+          <h2>Three projects in motion.</h2>
           <p className="section-head__sub">Real work. Real results. More on the way.</p>
         </header>
 
@@ -40,7 +40,7 @@ export default function WorkSection({ projects }) {
                   ))}
                 </div>
                 <p>{project.description}</p>
-                <a href={project.href}>
+                <a href={project.href} target="_blank" rel="noopener noreferrer">
                   <span>View Project</span>
                   <em>&rarr;</em>
                 </a>

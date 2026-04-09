@@ -22,7 +22,7 @@ export default function HeroSection({ heroLines, onStartProject }) {
 
         <span className="hero__eyebrow">
           <span className="hero__eyebrow-dot" aria-hidden="true" />
-          Est. 2024&nbsp;&nbsp;·&nbsp;&nbsp;Digital Studio
+          Est. 2026&nbsp;&nbsp;·&nbsp;&nbsp;Digital Studio
         </span>
 
         <h1
@@ -81,7 +81,7 @@ export default function HeroSection({ heroLines, onStartProject }) {
         </div>
 
         {/* Year stamp — bottom right */}
-        <div className="hero__year" aria-hidden="true">© 2024 Allora</div>
+        <div className="hero__year" aria-hidden="true">© 2026 Allora</div>
       </div>
     </section>
   );

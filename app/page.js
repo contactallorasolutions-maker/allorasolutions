@@ -41,7 +41,16 @@ const projects = [
       "An AI receptionist workflow designed to handle hospital front-desk interactions, appointment routing, and patient communication at scale.",
     visualClass: "project-visual--hospital",
     coverImage: "/projects/hospital-ai-cover.svg",
-    href: "#"
+    href: "https://humbaldentalclinic.vercel.app/"
+  },
+  {
+    name: "Wyre.AI",
+    tags: ["AI Platform", "Automation", "SaaS"],
+    description:
+      "An intelligent automation platform that leverages AI to streamline complex business workflows, reduce manual overhead, and accelerate decision-making.",
+    visualClass: "project-visual--wyre",
+    coverImage: "/projects/wyre-cover.svg",
+    href: "https://wyre.ai"
   }
 ];
 
@@ -155,19 +164,19 @@ const testimonials = [
     quote:
       "Working with Allora was unlike any agency experience. They delivered a website that actually converts - and they actually listened.",
     author: "Founder",
-    company: "Project 1 Client Name"
+    company: "ÉLÉVÉ Concierge"
   },
   {
     quote:
       "The AI chatbot they built handles 80% of our customer questions automatically. Game changer for our support team.",
     author: "CEO",
-    company: "Project 2 Client Name"
+    company: "Humbal Dental Clinic"
   },
   {
     quote:
       "Their process is tight, communication is clear, and the output is stunning.",
-    author: "Future Client",
-    company: "Placeholder"
+    author: "Founder",
+    company: "Wyre.AI"
   }
 ];
 

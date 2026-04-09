@@ -22,7 +22,9 @@ export default function ContactSection({ onStartProject, onCopyEmail, copied }) 
         </div>
 
         <div className="contact-cta__meta">
-          <span>Location: Your City</span>
+          <span>Ahmedabad, Gujarat</span>
+          <b>&middot;</b>
+          <span>Projects Worldwide</span>
           <b>&middot;</b>
           <span>Response in 24hrs</span>
           <b>&middot;</b>

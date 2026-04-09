@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+  <title id="t">Wyre.AI cover</title>
+  <desc id="d">Wyre AI project cover artwork</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0a18" />
+      <stop offset="50%" stop-color="#150f28" />
+      <stop offset="100%" stop-color="#0a0716" />
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.1" r="0.6">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.85" cy="0.9" r="0.55">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)" />
+  <rect width="1600" height="1000" fill="url(#glowA)" />
+  <rect width="1600" height="1000" fill="url(#glowB)" />
+
+  <!-- Neural network nodes -->
+  <g stroke="url(#lineGrad)" stroke-width="1.5" opacity="0.3">
+    <line x1="300" y1="250" x2="600" y2="400" />
+    <line x1="300" y1="750" x2="600" y2="600" />
+    <line x1="600" y1="400" x2="1000" y2="350" />
+    <line x1="600" y1="600" x2="1000" y2="650" />
+    <line x1="1000" y1="350" x2="1300" y2="500" />
+    <line x1="1000" y1="650" x2="1300" y2="500" />
+    <line x1="600" y1="400" x2="1000" y2="650" />
+    <line x1="600" y1="600" x2="1000" y2="350" />
+  </g>
+
+  <g fill="#a855f7" opacity="0.5">
+    <circle cx="300" cy="250" r="8" />
+    <circle cx="300" cy="750" r="8" />
+    <circle cx="600" cy="400" r="10" />
+    <circle cx="600" cy="600" r="10" />
+    <circle cx="1000" cy="350" r="10" />
+    <circle cx="1000" cy="650" r="10" />
+    <circle cx="1300" cy="500" r="12" />
+  </g>
+
+  <g fill="#f0e6ff">
+    <text x="220" y="470" font-family="Arial, sans-serif" font-size="110" font-weight="700" letter-spacing="12">WYRE.AI</text>
+    <text x="224" y="540" font-family="Arial, sans-serif" font-size="32" letter-spacing="6" opacity="0.8">INTELLIGENT AUTOMATION</text>
+  </g>
+
+  <rect x="224" y="570" width="320" height="2" fill="#a855f7" opacity="0.6"/>
+</svg>

@@ -6,7 +6,7 @@ export default function NumbersSection({ quoteWords }) {
 
         <div className="numbers__grid reveal reveal-stagger">
           <article className="stat">
-            <p className="stat__number" data-target="2">
+            <p className="stat__number" data-target="3">
               0
             </p>
             <p className="stat__label">

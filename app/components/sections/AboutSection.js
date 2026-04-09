@@ -18,7 +18,7 @@ export default function AboutSection() {
             We are small by design. Focused by choice. Every client gets our full attention - not
             a junior team.
           </p>
-          <a href="#">Meet the Team &rarr;</a>
+          {/* <a href="#">Meet the Team &rarr;</a> */}
         </div>
 
         <div className="about__visual" aria-hidden="true">

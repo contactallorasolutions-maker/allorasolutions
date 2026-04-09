@@ -19,15 +19,15 @@ export default function FooterSection({ navLinks }) {
         <div className="footer__divider" />
 
         <div className="footer__bottom">
-          <p>&copy; 2024 Allora Solutions. All rights reserved.</p>
+          <p>&copy; 2026 Allora Solutions. All rights reserved.</p>
           <div className="footer__social">
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/company/allora-solution/" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
-            <a href="https://x.com" target="_blank" rel="noreferrer">
+            <a href="https://x.com/allorasolution" target="_blank" rel="noreferrer">
               X (Twitter)
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/allorasolutions" target="_blank" rel="noreferrer">
               Instagram
             </a>
           </div>
